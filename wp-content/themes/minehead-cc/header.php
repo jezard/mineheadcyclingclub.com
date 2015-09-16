@@ -39,7 +39,7 @@
 			</div>
 		</div>
 		<!-- if home, add the full width image -->
-		<div class="branding-container">
+		<div class="branding-container" style="background: url(<?php echo bloginfo('template_url');?>/theme-images/header-bg.png);background-position: center top;">
 			<div class="grid">
 				<div class="site-branding">
 					<div class="col-2-5">
