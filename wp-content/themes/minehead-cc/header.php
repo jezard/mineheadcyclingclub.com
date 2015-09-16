@@ -19,6 +19,7 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,800,700,400italic,600' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 
+
 <?php wp_head(); ?>
 </head>
 
@@ -26,8 +27,7 @@
 <div id="page" class="hfeed site" style="display:inline">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'minehead-cc' ); ?></a>
 
-	<?php  ( is_user_logged_in() ) ? $top = "32" : $top = "0"; ?> 
-	<header id="masthead" class="site-header" role="banner" style="top:<?php echo $top; ?>px">
+	<header id="masthead" class="site-header" role="banner" >
 		<div class="menu-container">
 			<div class="grid">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -39,7 +39,7 @@
 			</div>
 		</div>
 		<!-- if home, add the full width image -->
-		<div class="branding-container" style="background: url(<?php echo bloginfo('template_url');?>/theme-images/header-bg.png);background-position: center top;">
+		<div id="branding" class="branding-container" style="background: url(<?php echo bloginfo('template_url');?>/theme-images/header-bg.png);background-position: center top;">
 			<div class="grid">
 				<div class="site-branding">
 					<div class="col-2-5">

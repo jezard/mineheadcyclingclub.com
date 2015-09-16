@@ -1277,7 +1277,7 @@ a, a:hover, a:visited{
 	top:-14px;
 }
 .branding-container{
-	background-position: center top;
+	
 	min-height:223px;
 }
 #site-logo a{
@@ -1321,4 +1321,11 @@ a, a:hover, a:visited{
 }
 .footer-link-img img{
 	float:right;
+}
+
+
+@media screen and (max-width: 600px){
+	#wpadminbar {
+	    position: fixed!important;
+	}
 }
