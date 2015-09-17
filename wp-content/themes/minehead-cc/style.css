@@ -1336,7 +1336,7 @@ a, a:hover, a:visited{
 }
 /*home template*/
 .home-feature-image img{
-	display: block;
+	display: none;/*hide for now! show on the join us page?*/
 }
 #iconographics{
 	min-height:120px;
