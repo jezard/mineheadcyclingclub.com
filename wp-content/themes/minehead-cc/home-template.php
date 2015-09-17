@@ -16,11 +16,53 @@ get_header(); ?>
 			?>
 		</div>
 	</div>
-	<div id="iconographics">
-
+	<div id="iconographics" class="grid grid-pad">
+		<div class="col-1-1">
+			<h2>Quick links</h2>
+		</div>
+		<div class="col-1-5">
+			<nav class="icon-container">
+				<a href="#">
+					<img src ="<?php echo bloginfo('template_url');?>/theme-images/information-icon.png" alt="" height="100" width="100" />
+					<span>Information</span>
+				</a>
+			</nav>
+		</div>
+		<div class="col-1-5">
+			<nav class="icon-container">
+				<a href="#">
+					<img src ="<?php echo bloginfo('template_url');?>/theme-images/pics-vids-icon.png" alt="" height="100" width="107" />
+					<span>Pictures &amp; Videos</span>
+				</a>
+			</nav>
+		</div>
+		<div class="col-1-5">
+			<nav class="icon-container">
+				<a href="#">
+					<img src ="<?php echo bloginfo('template_url');?>/theme-images/news-ads-icon.png" alt="" height="100" width="100" />
+					<span>News &amp; Ads</span>
+				</a>
+			</nav>
+		</div>
+		<div class="col-1-5">
+			<nav class="icon-container">
+				<a href="#">
+					<img src ="<?php echo bloginfo('template_url');?>/theme-images/results-icon.png" alt="" height="100" width="100" />
+					<span>Results</span>
+				</a>
+			</nav>
+		</div>
+		<div class="col-1-5">
+			<nav class="icon-container">
+				<a href="#">
+					<img src ="<?php echo bloginfo('template_url');?>/theme-images/links-icon.png" alt="" height="100" width="100" />
+					<span>Useful links</span>
+				</a>
+			</nav>
+		</div>
 	</div>
 
-	<div class="grid grid-pad">
+	<div id="home-blurb" class="grid grid-pad">
 		<div class="col-1-1">
 			<?php the_content(); ?>
 		</div>

@@ -1235,6 +1235,8 @@ a, a:hover, a:visited{
 	font-size: 2em;
 	margin: 0.67em 0;
 	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: -2px
 }
 .site-header img, .site-header a{
 	display: inline-block;
@@ -1332,19 +1334,24 @@ a, a:hover, a:visited{
 	display: block;
 }
 #iconographics{
-	height:100px;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#878b87+0,ffffff+100 */
-background: #878b87; /* Old browsers */
-background: -moz-linear-gradient(top,  #878b87 0%, #ffffff 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#878b87), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #878b87 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #878b87 0%,#ffffff 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #878b87 0%,#ffffff 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #878b87 0%,#ffffff 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878b87', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	min-height:120px;
+	border-top: 2px #FB1F0F solid;
 
 
-
+}
+.icon-container img{
+	margin:0 auto;
+	display: block;
+}
+.icon-container span{
+	font-weight: bold;
+	text-align: center;
+	color: #666;
+	width:100%;
+	display: block;
+}
+#home-blurb{
+	border-bottom: 2px dotted gray;
 }
 
 
