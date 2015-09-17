@@ -62,10 +62,8 @@ get_header(); ?>
 		</div>
 	</div>
 
-	<div id="home-blurb" class="grid grid-pad">
-		<div class="col-1-1">
-			<?php the_content(); ?>
-		</div>
+	<div id="home-blurb">
+		<?php the_content(); ?>
 	</div>
 
 <?php endwhile; // End of the loop. ?>

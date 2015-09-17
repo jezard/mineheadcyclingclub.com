@@ -1196,6 +1196,9 @@ body {
 html, body{
 	height:100%;
 }
+ul, ol {
+     margin: 0 0 0 0; 
+}
 .site-content{
 	min-height: 100%;
 	margin-bottom:-96px;
@@ -1217,6 +1220,7 @@ body, input{
 }
 h1, h2, h3, h4, h5, .site-header{
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 }
 a, a:hover, a:visited{
 	color:#A00F03;
@@ -1353,10 +1357,18 @@ a, a:hover, a:visited{
 }
 #home-blurb{
 	border-bottom: 2px dotted gray;
+	background: rgba(128, 128, 128, 0.05);
+    font-size: 1.3em;
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px 60px;
 }
-.mcc-news-feed a{
+.mcc-news-feed h1 > a{
 	color:#333;
-	font-weight: 300;
+	font-weight: 400;
+}
+.mcc-news-feed{
+	max-width: 600px
 }
 
 @media screen and (max-width: 600px){
