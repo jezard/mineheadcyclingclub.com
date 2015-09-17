@@ -9,14 +9,35 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="blog-content" class="grid grid-pad">
+
+
+	<?php while ( have_posts() ) : the_post(); ?>
+		<span class="category-slug hide-on-mobile"><?php the_category(', '); ?> article</span>
+	<?php endwhile; // End of the loop. ?>
+
+	<div class="col-1-4">
+		<?php get_sidebar(); ?>
+	</div>
+
+	<div id="primary" class="col-9-12 content-area">
+		<main id="main" class="site-main mcc-news-article" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
+			<?php
+
+			$args = wp_parse_args( $args, array(
+		        'prev_text'          => '&laquo; %title',
+		        'next_text'          => '%title &raquo;',
+		        'screen_reader_text' => __( 'Post navigation' ),
+		    ) );
+
+
+			the_post_navigation($args); 
+			?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -29,6 +50,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</div>
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

@@ -1336,7 +1336,8 @@ a, a:hover, a:visited{
 }
 /*home template*/
 .home-feature-image img{
-	display: none;/*hide for now! show on the join us page?*/
+	display: block;
+	margin-top: -150px;/*temp*/
 }
 #iconographics{
 	min-height:120px;
@@ -1363,12 +1364,26 @@ a, a:hover, a:visited{
     text-align: center;
     padding: 30px 60px;
 }
-.mcc-news-feed h1 > a{
+.mcc-news-feed h1 > a {
 	color:#333;
 	font-weight: 400;
 }
 .mcc-news-feed{
 	max-width: 600px
+}
+/*blog pages*/
+.mcc-news-article{
+	max-width: 600px;
+}
+#blog-content span a{
+	color:#333;
+}
+.category-slug{
+	display: block;
+	font-size: 20px;
+	margin: 20px 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 }
 
 @media screen and (max-width: 600px){
