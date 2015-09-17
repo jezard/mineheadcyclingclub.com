@@ -1236,7 +1236,8 @@ a, a:hover, a:visited{
 	margin: 0.67em 0;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: -2px
+	letter-spacing: -2px;
+	text-shadow: 0 2px #fff;
 }
 .site-header img, .site-header a{
 	display: inline-block;
