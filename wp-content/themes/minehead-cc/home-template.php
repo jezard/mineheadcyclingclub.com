@@ -70,19 +70,33 @@ get_header(); ?>
 
 <?php endwhile; // End of the loop. ?>
 
-<div class="grid">
+<div class="grid grid-pad">
 	<div class="col-1-4">
 		<?php get_sidebar(); ?>
 	</div>
-	<div class="col-3-4">
+	<div class="col-9-12">
 		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
+			<main id="main" class="mcc-news-feed site-main" role="main">
 
-				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php the_content(); ?>
+			<?php //https://codex.wordpress.org/Template_Tags/get_posts
 
-				<?php endwhile; // End of the loop. ?>
+
+			$args = array( 'posts_per_page' => 5 );
+
+			$myposts = get_posts( $args );
+			foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+				<aside>
+					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+					<?php the_excerpt(); ?>
+				</aside>
+
+			<?php endforeach; 
+			wp_reset_postdata();
+
+			?>
+
+
 
 			</main><!-- #main -->
 		</div><!-- #primary -->

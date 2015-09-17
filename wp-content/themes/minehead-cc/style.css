@@ -1336,7 +1336,7 @@ a, a:hover, a:visited{
 }
 #iconographics{
 	min-height:120px;
-	border-top: 2px #FB1F0F solid;
+	border-top: 2px dotted gray;
 
 
 }
@@ -1354,7 +1354,10 @@ a, a:hover, a:visited{
 #home-blurb{
 	border-bottom: 2px dotted gray;
 }
-
+.mcc-news-feed a{
+	color:#333;
+	font-weight: 300;
+}
 
 @media screen and (max-width: 600px){
 	#wpadminbar {

@@ -18,6 +18,9 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,800,700,400italic,600' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+<script src="https://use.typekit.net/wrf3urk.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<!-- Don't forget to change typekit domin -->
 
 
 <?php wp_head(); ?>
