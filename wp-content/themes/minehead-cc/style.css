@@ -1387,6 +1387,16 @@ p.site-title{
 .mcc-news-article{
 	max-width: 600px;
 }
+
+.mcc-news-article img, .mcc-news-feed img, #mcc-featured-image img{
+	-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+}
+#mcc-featured-image {
+	margin-right: 20px;
+}
+
 #blog-content span a{
 	color:#333;
 }

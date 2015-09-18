@@ -21,13 +21,15 @@ get_header(); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		<div class-"col-1-1"><h1 class="page-type"><?php the_title(); ?></h1>
-		<?php
+			<div id="mcc-featured-image">
+				<?php
 
-			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				the_post_thumbnail();
-			} 
+					if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+						the_post_thumbnail();
+					} 
 
-		?>
+				?>
+			</div>
 		</div>
 
 	<?php endwhile; // End of the loop. ?>
