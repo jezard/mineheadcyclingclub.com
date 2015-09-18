@@ -1222,6 +1222,15 @@ h1, h2, h3, h4, h5, .site-header{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 }
+span.page-type, h1.page-type{
+	font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 0.67em 0;
+    display: block;
+    letter-spacing: -1px;
+    font-family: 'Open Sans', sans-serif;
+}
 a, a:hover, a:visited{
 	color:#A00F03;
 	text-decoration: none;
@@ -1378,16 +1387,20 @@ a, a:hover, a:visited{
 #blog-content span a{
 	color:#333;
 }
-.category-slug{
-	display: block;
-	font-size: 20px;
-	margin: 20px 0;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
+/*main pages*/
+.mcc-page{
+	max-width: 600px;
+	font-size: 1.3em;
 }
 
 @media screen and (max-width: 600px){
 	#wpadminbar {
 	    position: fixed!important;
+	}
+}
+
+@media handheld, only screen and (max-width: 783px) {
+	.site-content{
+		padding-top: 0;
 	}
 }

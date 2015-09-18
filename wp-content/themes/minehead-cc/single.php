@@ -10,11 +10,7 @@
 get_header(); ?>
 
 <div id="blog-content" class="grid grid-pad">
-
-
-	<?php while ( have_posts() ) : the_post(); ?>
-		<span class="category-slug hide-on-mobile"><?php the_category(', '); ?> article</span>
-	<?php endwhile; // End of the loop. ?>
+	<div class-"col-1-1"><span class="page-type">Club Article</span></div>
 
 	<div class="col-1-4">
 		<?php get_sidebar(); ?>

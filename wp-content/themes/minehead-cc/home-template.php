@@ -20,7 +20,7 @@ get_header(); ?>
 		<div class="col-1-1">
 			<h2>Quick links</h2>
 		</div>
-		<div class="col-1-5">
+		<div class="col-1-5 mobile-col-1-2">
 			<nav class="icon-container">
 				<a href="#">
 					<img src ="<?php echo bloginfo('template_url');?>/theme-images/information-icon.png" alt="" height="100" width="100" />
@@ -28,7 +28,7 @@ get_header(); ?>
 				</a>
 			</nav>
 		</div>
-		<div class="col-1-5">
+		<div class="col-1-5 mobile-col-1-2">
 			<nav class="icon-container">
 				<a href="#">
 					<img src ="<?php echo bloginfo('template_url');?>/theme-images/pics-vids-icon.png" alt="" height="100" width="107" />
@@ -36,7 +36,7 @@ get_header(); ?>
 				</a>
 			</nav>
 		</div>
-		<div class="col-1-5">
+		<div class="col-1-5 mobile-col-1-2">
 			<nav class="icon-container">
 				<a href="#">
 					<img src ="<?php echo bloginfo('template_url');?>/theme-images/news-ads-icon.png" alt="" height="100" width="100" />
@@ -44,7 +44,7 @@ get_header(); ?>
 				</a>
 			</nav>
 		</div>
-		<div class="col-1-5">
+		<div class="col-1-5 mobile-col-1-2">
 			<nav class="icon-container">
 				<a href="#">
 					<img src ="<?php echo bloginfo('template_url');?>/theme-images/results-icon.png" alt="" height="100" width="100" />
@@ -83,16 +83,13 @@ get_header(); ?>
 			$args = array( 'posts_per_page' => 5 );
 
 			$myposts = get_posts( $args );
-			foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+			foreach ( $myposts as $post ): ?>
 				<aside>
 					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 					<?php the_excerpt(); ?>
 				</aside>
 
-			<?php endforeach; 
-			wp_reset_postdata();
-
-			?>
+			<?php endforeach; ?>
 
 
 

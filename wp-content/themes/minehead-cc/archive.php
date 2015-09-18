@@ -10,12 +10,8 @@
 get_header(); ?>
 
 
-
-
-
-
 <div class="grid grid-pad">
-	<div class-"col-1-1"><h1>Archive</h1></div>
+	<div class-"col-1-1"><span class="page-type">Club Articles</span></div>
 	<div class="col-1-4">
 		<?php get_sidebar(); ?>
 	</div>
