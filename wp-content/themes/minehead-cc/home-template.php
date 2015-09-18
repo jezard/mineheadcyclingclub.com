@@ -20,7 +20,7 @@ get_header(); ?>
 		</div>
 		<div class="col-1-5 mobile-col-1-2">
 			<nav class="icon-container">
-				<a href="#">
+				<a href="<?php get_site_url();?>/information/">
 					<img src ="<?php echo bloginfo('template_url');?>/theme-images/information-icon.png" alt="" height="100" width="100" />
 					<span>Information</span>
 				</a>
@@ -28,7 +28,7 @@ get_header(); ?>
 		</div>
 		<div class="col-1-5 mobile-col-1-2">
 			<nav class="icon-container">
-				<a href="#">
+				<a href="<?php get_site_url();?>/articles/news-and-ads/">
 					<img src ="<?php echo bloginfo('template_url');?>/theme-images/news-ads-icon.png" alt="" height="100" width="100" />
 					<span>News &amp; Ads</span>
 				</a>
@@ -36,7 +36,7 @@ get_header(); ?>
 		</div>
 		<div class="col-1-5 mobile-col-1-2">
 			<nav class="icon-container">
-				<a href="#">
+				<a href="<?php get_site_url();?>/articles/results/">
 					<img src ="<?php echo bloginfo('template_url');?>/theme-images/results-icon.png" alt="" height="100" width="100" />
 					<span>Results</span>
 				</a>
@@ -44,7 +44,7 @@ get_header(); ?>
 		</div>
 		<div class="col-1-5 mobile-col-1-2">
 			<nav class="icon-container">
-				<a href="#">
+				<a href="<?php get_site_url();?>/links/">
 					<img src ="<?php echo bloginfo('template_url');?>/theme-images/links-icon.png" alt="" height="100" width="100" />
 					<span>Useful links</span>
 				</a>
@@ -52,7 +52,7 @@ get_header(); ?>
 		</div>
 				<div class="col-1-5 hide-on-mobile">
 			<nav class="icon-container">
-				<a href="#">
+				<a href="<?php get_site_url();?>/articles/videos-and-pictures/">
 					<img src ="<?php echo bloginfo('template_url');?>/theme-images/pics-vids-icon.png" alt="" height="100" width="107" />
 					<span>Pictures &amp; Videos</span>
 				</a>
