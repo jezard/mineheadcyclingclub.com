@@ -63,6 +63,10 @@
 				</div><!-- .site-branding -->
 			</div>
 		</div>
+		<div id="mob-logo">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php echo bloginfo('template_url');?>/theme-images/mob-logo.png" alt="Minehead CC" /></a>
+		</div>
+
 
 
 		

@@ -7,14 +7,12 @@ get_header(); ?>
 
 
 <?php while ( have_posts() ) : the_post(); ?>
-	<div class="hide-on-mobile">
-		<div class="home-feature-image">
-			<?php 
-				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-					the_post_thumbnail();
-				} 
-			?>
-		</div>
+	<div class="home-feature-image">
+		<?php 
+			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+				the_post_thumbnail();
+			} 
+		?>
 	</div>
 	<div id="iconographics" class="grid grid-pad">
 		<div class="col-1-1">
@@ -25,14 +23,6 @@ get_header(); ?>
 				<a href="#">
 					<img src ="<?php echo bloginfo('template_url');?>/theme-images/information-icon.png" alt="" height="100" width="100" />
 					<span>Information</span>
-				</a>
-			</nav>
-		</div>
-		<div class="col-1-5 mobile-col-1-2">
-			<nav class="icon-container">
-				<a href="#">
-					<img src ="<?php echo bloginfo('template_url');?>/theme-images/pics-vids-icon.png" alt="" height="100" width="107" />
-					<span>Pictures &amp; Videos</span>
 				</a>
 			</nav>
 		</div>
@@ -52,11 +42,19 @@ get_header(); ?>
 				</a>
 			</nav>
 		</div>
-		<div class="col-1-5">
+		<div class="col-1-5 mobile-col-1-2">
 			<nav class="icon-container">
 				<a href="#">
 					<img src ="<?php echo bloginfo('template_url');?>/theme-images/links-icon.png" alt="" height="100" width="100" />
 					<span>Useful links</span>
+				</a>
+			</nav>
+		</div>
+				<div class="col-1-5 hide-on-mobile">
+			<nav class="icon-container">
+				<a href="#">
+					<img src ="<?php echo bloginfo('template_url');?>/theme-images/pics-vids-icon.png" alt="" height="100" width="107" />
+					<span>Pictures &amp; Videos</span>
 				</a>
 			</nav>
 		</div>

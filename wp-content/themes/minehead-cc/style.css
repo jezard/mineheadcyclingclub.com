@@ -1314,6 +1314,9 @@ a, a:hover, a:visited{
 	text-decoration: none;
 	color:#333;
 }
+p.site-title{
+	margin-left: 20px;
+}
 #bcf-logo a{
 	width:115px;
 	margin-top: 22px;
@@ -1387,10 +1390,26 @@ a, a:hover, a:visited{
 #blog-content span a{
 	color:#333;
 }
+form#commentform label {
+    width: 80px;
+    display: inline-block;
+}
 /*main pages*/
 .mcc-page{
 	max-width: 600px;
 	font-size: 1.3em;
+}
+#mob-logo{
+	display: none;
+	border-top: 2px black solid;
+	background-color: #23282D;
+	-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+
+}
+#mob-logo a, #mob-logo img{
+	display: block;
 }
 
 @media screen and (max-width: 600px){
@@ -1399,8 +1418,41 @@ a, a:hover, a:visited{
 	}
 }
 
-@media handheld, only screen and (max-width: 783px) {
+@media handheld, only screen and (max-width: 768px) {
 	.site-content{
-		padding-top: 0;
+		padding-top: 100px;
+	}
+	#mob-logo{
+		display: block;
+		border-top: 2px #333 dotted;
+	}
+	.icon-container{
+		margin-bottom: 30px;
+	}
+	#iconographics {
+	    border-top: 0;
+	}
+	.home-feature-image{
+		display: none;
+	}
+	.site-footer, .site-content:after {
+	    height: 150px;
+	}
+	.footer-link-img img {
+	     float: none; 
+	}
+
+}
+@media handheld, only screen and (max-width: 1139px) {
+	p.site-title{
+		font-size: 1.8em;
+	}
+}
+@media handheld, only screen and (max-width: 1023px) {
+	p.site-title{
+		font-size: 1.5em;
+	}
+		.main-navigation form.search-form {
+			display: none;
 	}
 }
