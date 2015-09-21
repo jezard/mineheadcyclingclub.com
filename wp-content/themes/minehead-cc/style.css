@@ -1282,6 +1282,7 @@ a, a:hover, a:visited{
     border: 0;
     font-size: 14px;
 	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
 }
 .nav-image-container{
 	display: inline-block;
@@ -1404,6 +1405,9 @@ form#commentform label {
     width: 80px;
     display: inline-block;
 }
+.comments-link, .edit-link{
+	display: block;
+}
 /*main pages*/
 .mcc-page{
 	max-width: 600px;
@@ -1430,6 +1434,10 @@ form#commentform label {
 @media screen and (max-width: 600px){
 	#wpadminbar {
 	    position: fixed!important;
+	}
+	#home-blurb {
+		font-size: 1.2em;
+	    padding: 20px;
 	}
 }
 

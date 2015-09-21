@@ -15,7 +15,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div id="footer-container" class="grid grid-pad">
 			<div class="col-1-2 site-info">
-				<span><strong>&copy; Minehead CC <?php echo date("Y"); ?></strong></span>
+				<span><strong>&copy; Minehead CC <?php echo date("Y"); ?> | <a href="/privacy-policy/">Privacy Policy</a></strong></span>
 				<br>
 				<small>
 					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'minehead-cc' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'minehead-cc' ), 'WordPress' ); ?></a>
