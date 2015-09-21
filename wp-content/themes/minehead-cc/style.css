@@ -1409,6 +1409,7 @@ form#commentform label {
 	max-width: 600px;
 	font-size: 1.3em;
 }
+/* mobile stuff */
 #mob-logo{
 	display: none;
 	border-top: 2px black solid;
@@ -1421,6 +1422,10 @@ form#commentform label {
 #mob-logo a, #mob-logo img{
 	display: block;
 }
+#mob-find-more, #mob-show-less{
+		display: none;
+		color: #A00F03;
+	}
 
 @media screen and (max-width: 600px){
 	#wpadminbar {
@@ -1450,6 +1455,13 @@ form#commentform label {
 	}
 	.footer-link-img img {
 	     float: none; 
+	}
+	#mob-find-more, #mob-show-less{
+		display: block;
+		cursor: pointer;
+	}
+	.widget-area{
+		display: none;
 	}
 
 }

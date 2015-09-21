@@ -14,7 +14,8 @@ get_header(); ?>
 <div id="blog-content" class="grid grid-pad">
 	<div class-"col-1-1"><span class="page-type">Club Article</span></div>
 
-	<div class="col-1-4">
+	<div id="mcc-sidebar" class="col-1-4">
+		<div id="mob-find-more">Find More Articles &raquo;</div>
 		<?php get_sidebar(); ?>
 	</div>
 

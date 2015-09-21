@@ -24,6 +24,8 @@
 
 
 <?php wp_head(); ?>
+
+<script src="<?php echo bloginfo('template_url');?>/js/main.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

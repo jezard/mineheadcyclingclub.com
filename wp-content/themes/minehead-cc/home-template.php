@@ -67,7 +67,8 @@ get_header(); ?>
 <?php endwhile; // End of the loop. ?>
 
 <div class="grid grid-pad">
-	<div class="col-1-4">
+	<div id="mcc-sidebar" class="col-1-4">
+		<div id="mob-find-more">Find More Articles &raquo;</div>
 		<?php get_sidebar(); ?>
 	</div>
 	<div class="col-9-12">
