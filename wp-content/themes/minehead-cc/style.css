@@ -151,7 +151,7 @@ svg:not(:root) {
 }
 
 figure {
-	margin: 1em 40px;
+	margin: 0;
 }
 
 hr {
@@ -385,7 +385,7 @@ ol {
 }
 
 ul {
-	list-style: disc;
+	list-style: circle;
 }
 
 ol {
@@ -1213,6 +1213,12 @@ ul, ol {
 }
 
 /*global page styles*/
+hr{
+	height: 2px;
+	background-color: transparent;
+	border-bottom: 2px dotted gray;
+	margin: 18px 0 30px;
+}
 
 body, input{
 	font-family: 'Raleway', sans-serif;
@@ -1389,10 +1395,12 @@ p.site-title{
 	max-width: 600px;
 }
 
-.mcc-news-article img, .mcc-news-feed img, #mcc-featured-image img{
+.mcc-news-article img, .mcc-news-feed img, #mcc-featured-image img, .entry-content iframe, .mcc-page img, .mcc-page iframe{
 	-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+	border-radius: 5px;
+/*	    max-width: 90%;*/
 }
 #mcc-featured-image {
 	margin-right: 20px;
@@ -1410,8 +1418,15 @@ form#commentform label {
 }
 /*main pages*/
 .mcc-page{
-	max-width: 600px;
 	font-size: 1.3em;
+}
+.pdb-list{
+	font-size: 0.7em;
+	text-align: left;
+	font-family: 'arial condensed';
+}
+.pdb-list tr:hover{
+	background-color: #ccc;
 }
 /* mobile stuff */
 #mob-logo{
