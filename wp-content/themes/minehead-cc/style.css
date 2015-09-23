@@ -1423,7 +1423,7 @@ form#commentform label {
 .pdb-list{
 	font-size: 0.7em;
 	text-align: left;
-	font-family: 'arial condensed';
+	font-family: 'arial condensed','arial narrow', 'helvetica condensed','helvetica narrow', sans-serif;
 }
 .pdb-list tr:hover{
 	background-color: #ccc;
