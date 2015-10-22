@@ -1191,6 +1191,9 @@ body {
 * Minehead CC theme CSS
 *
 *****/
+body{
+	background-color: #333;
+}
 
 /*sticky-footer*/
 html, body{
@@ -1306,7 +1309,7 @@ a, a:hover, a:visited{
 }
 .branding-container{
 	
-	min-height:223px;
+	min-height:231px;
 }
 #site-logo a{
 	height:150px;
@@ -1331,7 +1334,7 @@ p.site-title{
 	float:right;
 }
 .site-content{
-	background-color: #fff;
+	background-color: rgba(255,255,255,0.9);
 	padding-top: 170px;
 	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
@@ -1360,7 +1363,8 @@ p.site-title{
 }
 #iconographics{
 	min-height:120px;
-	border-top: 2px dotted gray;
+	border-top: 5px solid YELLOW;
+	text-transform: uppercase;
 
 
 }
