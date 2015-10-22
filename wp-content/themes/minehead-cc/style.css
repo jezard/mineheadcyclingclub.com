@@ -1312,13 +1312,13 @@ a, a:hover, a:visited{
 	min-height:231px;
 }
 #site-logo a{
-	height:150px;
-	width:150px;
+/*	height:150px;
+	width:150px;*/
 	display: block;
 	margin:0 auto;
 }
 #site-logo.col-1-5{
-	padding: 20px 10px
+	padding: 0px 10px
 }
 .site-title a{
 	text-decoration: none;
@@ -1408,6 +1408,7 @@ p.site-title{
 }
 #mcc-featured-image {
 	margin-right: 20px;
+	margin-bottom: 30px;
 }
 
 #blog-content span a{

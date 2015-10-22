@@ -58,7 +58,7 @@
 
 					</div>
 					<div id="site-logo" class="col-1-5">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php echo bloginfo('template_url');?>/theme-images/mcc-site-logo.png" /></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php echo bloginfo('template_url');?>/theme-images/mcc-site-logo-sprocket.png" /></a>
 					</div>
 					<div id="bcf-logo" class="col-2-5">
 						<a href="https://www.britishcycling.org.uk/" title="British Cycling Affiliated Club" target="_blank" ><img src="<?php echo bloginfo('template_url');?>/theme-images/bcf-logo.png" alt="British Cycling Affiliated Club" /></a>
