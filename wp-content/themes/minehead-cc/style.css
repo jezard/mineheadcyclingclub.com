@@ -1241,7 +1241,8 @@ span.page-type, h1.page-type{
     font-family: 'Open Sans', sans-serif;
 }
 a, a:hover, a:visited{
-	color:#A00F03;
+	/*color:#A00F03;*/
+	color:#d90000;
 	text-decoration: none;
 }
 #masthead{
@@ -1312,8 +1313,7 @@ a, a:hover, a:visited{
 	min-height:231px;
 }
 #site-logo a{
-/*	height:150px;
-	width:150px;*/
+	padding:15px;
 	display: block;
 	margin:0 auto;
 }
@@ -1344,11 +1344,11 @@ p.site-title{
 .site-footer{
 	border-top: 2px dotted gray;
 	background: #eee;
-	background: rgba(0,0,0,0.1);
+	/*background: rgba(0,0,0,0.01);*/
 }
 
 #footer-container{
-	background-color: #d7d7d6;
+	background-color: rgba(128,128,128,0.05);
 	height:100%;
 	-webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
@@ -1505,5 +1505,8 @@ form#commentform label {
 	}
 		.main-navigation form.search-form {
 			display: none;
+	}
+	#site-logo a{
+		padding:15px 0 0 0 ;
 	}
 }
