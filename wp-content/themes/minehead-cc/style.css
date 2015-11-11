@@ -1337,9 +1337,9 @@ p.site-title{
 	/*background-color: rgba(255,255,255,0.9);*/
 	background: white;
 	padding-top: 170px;
-	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.5);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.5);
+	box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.5);
 }
 .site-footer{
 	border-top: 2px dotted gray;
@@ -1350,9 +1350,9 @@ p.site-title{
 #footer-container{
 	background-color: rgba(128,128,128,0.05);
 	height:100%;
-	-webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 10px 20px 0px rgba(100,100,100,0.5);
+	-moz-box-shadow: 0px 10px 20px 0px rgba(100,100,100,0.5);
+	box-shadow: 0px 10px 20px 0px rgba(100,100,100,0.5);
 }
 .footer-link-img img{
 	float:right;
