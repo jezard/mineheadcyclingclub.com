@@ -82,7 +82,8 @@ get_header(); ?>
 			$args = array( 'posts_per_page' => 5 );
 
 			$myposts = get_posts( $args );
-			foreach ( $myposts as $post ): ?>
+			foreach ( $myposts as $post ) : 
+  				setup_postdata( $post ); ?>
 				<aside>
 					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 					<?php the_excerpt(); ?>
