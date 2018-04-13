@@ -8,12 +8,11 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 	<div class="home-feature-image">
-		<?php 
-			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				the_post_thumbnail();
-			} 
-		?>
+		<img src="<?php echo bloginfo('template_url');?>/theme-images/hero-img.jpg" style="width:1140px; height:551px" alt="hero image" />
 	</div>
+	<div class="welcome-banner">
+		<img src="<?php echo bloginfo('template_url');?>/theme-images/welcome-banner.jpg" />
+		</div>
 	<div id="iconographics" class="grid grid-pad">
 		<div class="col-1-1">
 			<h2>Quick links</h2>

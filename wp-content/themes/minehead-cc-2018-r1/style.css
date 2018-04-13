@@ -1242,7 +1242,7 @@ span.page-type, h1.page-type{
 }
 a, a:hover, a:visited{
 	/*color:#A00F03;*/
-	color:#d90000;
+	color:#36474E;
 	text-decoration: none;
 }
 #masthead{
@@ -1251,17 +1251,10 @@ a, a:hover, a:visited{
     top: 0px;
 }
 .menu-container{
-	background-color: #eee;
+	background-color: #2a373c;
 	width: 100%
 }
-.site-title{
-	font-size: 2em;
-	margin: 0.67em 0;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: -2px;
-	text-shadow: 0 2px #fff;
-}
+
 .site-header img, .site-header a{
 	display: inline-block;
 }
@@ -1276,7 +1269,7 @@ a, a:hover, a:visited{
 	margin-left: 15px;
 }
 .main-navigation ul > li a{
-	color:#323232;
+	color:#fff;
 	font-size: 14px;
 	font-weight: 600;
 	display: inline-block;
@@ -1285,8 +1278,8 @@ a, a:hover, a:visited{
 	float:right;
 }
 .main-navigation .search-form input[type="text"]{
-	background: #323232;
-	color:#999;
+	background: #38474d;
+	color:#ddd;
 	padding: 0 10px;
     border-radius: 4px;
     border: 0;
@@ -1322,10 +1315,11 @@ a, a:hover, a:visited{
 }
 .site-title a{
 	text-decoration: none;
-	color:#333;
+	color:#ffd92a;
 }
 p.site-title{
 	margin-left: 20px;
+	margin-top: 0;
 }
 #bcf-logo a{
 	width:115px;
@@ -1337,16 +1331,23 @@ p.site-title{
 	/*background-color: rgba(255,255,255,0.9);*/
 	background: white;
 	padding-top: 170px;
-	-webkit-box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.5);
-	-moz-box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.5);
-	box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.5);
 }
 .site-footer{
 	border-top: 2px dotted gray;
-	background: #eee;
+	background: #ccc;
 	/*background: rgba(0,0,0,0.01);*/
 }
-
+.social-link{
+	width:223px;
+	height:29px;
+}
+.social-link img{
+	width:100%;
+	height:auto;
+}
+#social-links{
+	margin-top:27px;
+}
 #footer-container{
 	background-color: rgba(128,128,128,0.05);
 	height:100%;
@@ -1357,6 +1358,10 @@ p.site-title{
 .footer-link-img img{
 	float:right;
 }
+.welcome-banner img{
+	width:100%;
+	height:auto;
+}
 /*home template*/
 .home-feature-image img{
 	display: block;
@@ -1364,10 +1369,7 @@ p.site-title{
 }
 #iconographics{
 	min-height:120px;
-	border-top: 5px solid YELLOW;
 	text-transform: uppercase;
-
-
 }
 .icon-container img{
 	margin:0 auto;
@@ -1434,6 +1436,14 @@ form#commentform label {
 .pdb-list tr:hover{
 	background-color: #ccc;
 }
+#page{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#212b2e+0,37474e+13 */
+	background: #212b2e; /* Old browsers */
+	background: -moz-linear-gradient(top, #212b2e 0%, #37474e 13%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #212b2e 0%,#37474e 13%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #212b2e 0%,#37474e 13%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212b2e', endColorstr='#37474e',GradientType=0 ); /* IE6-9 */
+}
 /* mobile stuff */
 #mob-logo{
 	display: none;
@@ -1492,16 +1502,19 @@ form#commentform label {
 	.widget-area{
 		display: none;
 	}
+	.welcome-banner{
+		display: none;
+	}
 
 }
 @media handheld, only screen and (max-width: 1139px) {
 	p.site-title{
-		font-size: 1.8em;
+		font-size: 0.6em;
 	}
 }
 @media handheld, only screen and (max-width: 1023px) {
 	p.site-title{
-		font-size: 1.5em;
+		font-size: 0.6em;
 	}
 		.main-navigation form.search-form {
 			display: none;

@@ -30,7 +30,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site" style="display:inline">
+<div id="page" class="hfeed site" style="display:block">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'minehead-cc' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner" >
@@ -49,6 +49,10 @@
 			<div class="grid">
 				<div class="site-branding">
 					<div class="col-2-5">
+						<div id="social-links">
+							<div class="social-link"><a href="https://www.strava.com/clubs/23975?hl=en-GB" target="_blank" title="Find us on Strava"><img src="<?php echo bloginfo('template_url');?>/theme-images/strava.jpg" alt="strava link"/></a></div>
+							<div class="social-link"><a href="https://www.facebook.com/mineheadcc/" target="_blank" title="Find us on Facebook"><img src="<?php echo bloginfo('template_url');?>/theme-images/facebook.jpg" alt="strava link"/></a></div>
+						</div>
 
 						<?php if ( is_front_page() && is_home() ) : ?>
 							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
